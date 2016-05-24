@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button's bellow to fill out user profile</p>
+
+<button onclick="functionFirstName()">First Name</button>
+<button onclick="functionFavColor()">Favorite Color</button>
+<button onclick="functionFavFood()">Favorite Food</button>
+
+<p id="firstName"></p>
+<p id="favColor"></p>
+<p id="favFood"></p>
+
+<script>
+function functionFirstName() {
+    var person = prompt("Please enter your name");
+    if (person != null) {
+        document.getElementById("firstName").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+
+function functionFavColor() {
+    var color = prompt("What is your favorite color?");
+    if (color != null) {
+        document.getElementById("favColor").innerHTML =
+         "your favorite color is " + color + "! How Nice!";
+    }
+}
+
+function functionFavFood() {
+    var food = prompt("What is your favorite color?");
+    if (food != null) {
+        document.getElementById("favFood").innerHTML =
+         "your favorite food is " + food + "! YUM!!!!!!";
+    }
+}
+
+</script>
+
+</body>
+</html>
